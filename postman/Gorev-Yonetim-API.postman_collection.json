@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "Görev Yönetim API",
+    "description": "Görev CRUD akışı: ekle, listele, detay, güncelle, sil.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "projectId",
+      "value": "bcae906c-b2d8-4840-ae4c-a1803465c6c6"
+    },
+    {
+      "key": "assigneeId",
+      "value": "1ae47ea9-b798-421c-b987-e83a4a228f0b"
+    },
+    {
+      "key": "taskId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "1 Görev ekle",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"API dokümantasyonu\",\n  \"description\": \"README ve endpoint örneklerini tamamla\",\n  \"projectId\": \"{{projectId}}\",\n  \"assigneeId\": \"{{assigneeId}}\",\n  \"status\": \"todo\",\n  \"priority\": \"high\",\n  \"dueDate\": \"2026-11-15\"\n}"
+        },
+        "url": "{{baseUrl}}/api/tasks"
+      }
+    },
+    {
+      "name": "2 Görevleri listele",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/tasks"
+      }
+    },
+    {
+      "name": "3 Görev detayı",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/tasks/{{taskId}}"
+      }
+    },
+    {
+      "name": "4 Görevi güncelle",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"API dokümantasyonu\",\n  \"description\": \"Kurulum ve CRUD örnekleri eklendi\",\n  \"projectId\": \"{{projectId}}\",\n  \"assigneeId\": \"{{assigneeId}}\",\n  \"status\": \"in_progress\",\n  \"priority\": \"high\",\n  \"dueDate\": \"2026-11-20\"\n}"
+        },
+        "url": "{{baseUrl}}/api/tasks/{{taskId}}"
+      }
+    },
+    {
+      "name": "5 Görevi sil",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{baseUrl}}/api/tasks/{{taskId}}"
+      }
+    }
+  ]
+}

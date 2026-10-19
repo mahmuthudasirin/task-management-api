@@ -1,0 +1,112 @@
+{
+  "employees": [
+    {
+      "id": "1ae47ea9-b798-421c-b987-e83a4a228f0b",
+      "name": "Mahmut Huda Şirin",
+      "email": "mahmut.huda@sirket.com",
+      "role": "developer",
+      "department": "Backend",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "16363967-7d6a-4288-8cbc-6621fb5c7127",
+      "name": "Musa Kolcuk",
+      "email": "musa.kolcuk@sirket.com",
+      "role": "pm",
+      "department": "Yönetim",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "75bf2e14-e5f1-47f4-93a1-6c6f1b90d6f0",
+      "name": "Recep Ali Kavcı",
+      "email": "recep.ali@sirket.com",
+      "role": "qa",
+      "department": "Kalite",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "39bc8345-f6ac-4978-b8f2-ed5d676e9d8d",
+      "name": "İsmail Kemal Şener",
+      "email": "ismail.kemal@sirket.com",
+      "role": "designer",
+      "department": "Tasarım",
+      "createdAt": "2026-09-21T10:31:58.515Z",
+      "updatedAt": "2026-09-21T10:31:58.515Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "bcae906c-b2d8-4840-ae4c-a1803465c6c6",
+      "name": "Müşteri Portalı",
+      "description": "Müşteri paneli ve yetkilendirme",
+      "status": "active",
+      "startDate": "2026-09-01",
+      "endDate": "2026-12-15",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "babe14ad-4d49-474a-acd1-6b426b6e4ae4",
+      "name": "Mobil Uygulama",
+      "description": "iOS ve Android istemcileri",
+      "status": "planned",
+      "startDate": "2026-10-01",
+      "endDate": "2027-02-01",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "9aa4c1d8-7fcd-409d-ae5a-9d90cd70a21a",
+      "title": "Auth servisini yaz",
+      "description": "JWT tabanlı giriş ve yetkilendirme",
+      "projectId": "bcae906c-b2d8-4840-ae4c-a1803465c6c6",
+      "assigneeId": "1ae47ea9-b798-421c-b987-e83a4a228f0b",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-30",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "c4f109ad-4942-48f8-974d-37aec51e3d2d",
+      "title": "Test senaryolarını hazırla",
+      "description": "Login ve görev atama senaryoları",
+      "projectId": "bcae906c-b2d8-4840-ae4c-a1803465c6c6",
+      "assigneeId": "75bf2e14-e5f1-47f4-93a1-6c6f1b90d6f0",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-05",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "4ac424a8-213d-49c2-9d55-75d08214b50f",
+      "title": "Sprint planı çıkar",
+      "description": "İlk 4 sprint için kapsam",
+      "projectId": "babe14ad-4d49-474a-acd1-6b426b6e4ae4",
+      "assigneeId": "16363967-7d6a-4288-8cbc-6621fb5c7127",
+      "status": "review",
+      "priority": "low",
+      "dueDate": "2026-08-01",
+      "createdAt": "2026-09-21T10:31:27.284Z",
+      "updatedAt": "2026-09-21T10:31:27.284Z"
+    },
+    {
+      "id": "84ae00b2-a246-46d1-a7e5-27456de9d6ad",
+      "title": "Dokümantasyon",
+      "description": "",
+      "projectId": "bcae906c-b2d8-4840-ae4c-a1803465c6c6",
+      "assigneeId": "1ae47ea9-b798-421c-b987-e83a4a228f0b",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": null,
+      "createdAt": "2026-09-21T10:31:58.699Z",
+      "updatedAt": "2026-09-21T10:31:58.699Z"
+    }
+  ]
+}

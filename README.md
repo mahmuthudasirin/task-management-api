@@ -36,7 +36,7 @@ Proje tanıtımı: [docs/PROJE_TANITIM.md](docs/PROJE_TANITIM.md)
 
 Postman koleksiyonu: [postman/Gorev-Yonetim-API.postman_collection.json](postman/Gorev-Yonetim-API.postman_collection.json)
 
-Görev CRUD ekran görüntüleri `docs/postman/` klasöründedir.
+Görev CRUD ekran görüntüleri aşağıda ve `docs/postman/` klasöründedir.
 
 ## Kaynak modeli
 
@@ -141,3 +141,25 @@ src/
   services/              İş kuralları ve CRUD
   data/                  JSON dosya tabanlı veri yönetimi
 ```
+
+## Postman ekran görüntüleri
+
+### Görev ekle — POST /api/tasks
+
+![Görev ekle](docs/postman/01-gorev-ekle.png)
+
+### Görevleri listele — GET /api/tasks
+
+![Görevleri listele](docs/postman/02-gorev-listele.png)
+
+### Görev detayı — GET /api/tasks/:id
+
+![Görev detayı](docs/postman/03-gorev-detay.png)
+
+### Görevi güncelle — PUT /api/tasks/:id
+
+![Görevi güncelle](docs/postman/04-gorev-guncelle.png)
+
+### Görevi sil — DELETE /api/tasks/:id
+
+![Görevi sil](docs/postman/05-gorev-sil.png)
